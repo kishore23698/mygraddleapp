@@ -1,8 +1,7 @@
-version: 0.0
-os: linux	 
-hooks:	
-  BeforeInstall:	 
-    - location: scripts/build
-      timeout: 300	     
-      runas: root	      
+version: 0.2
+phases:
+  build: 
+    commands:
+      - echo 'build started'
+      - gradle clean build
     
