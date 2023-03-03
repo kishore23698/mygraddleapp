@@ -4,7 +4,7 @@ phases:
     commands:
       - echo 'build started'
       - gradle clean build
- artifacts:
+artifacts:
   files:
     - hello_world-0.0.1-SNAPSHOT.jar
     
