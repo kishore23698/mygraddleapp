@@ -6,10 +6,8 @@ phases:
       java: openjdk11
   build:
     commands:
-      - echo "Executing build phase"
       - ./gradlew build
   post_build:
     commands:
-      - echo "Executing post-build phase"
       - aws s3 cp build/libs/*.jar s3://ak2-codebuild-artifacts/*.jar
     
