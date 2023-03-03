@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo docker build -t img-2 -f /opt/codedeploy-agent/Dockerfile.txt .
+sudo docker run -itd --name con-2 -p 90:80 img-2
