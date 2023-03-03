@@ -1,1 +1,8 @@
-gradle clean build
+version: 0.0
+os: linux	 
+hooks:	
+  BeforeInstall:	 
+    - location: scripts/build
+      timeout: 300	     
+      runas: root	      
+    
