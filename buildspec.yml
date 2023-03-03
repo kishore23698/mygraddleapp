@@ -17,6 +17,6 @@ phases:
       - gradle clean build 
 
       
-  artifacts:
+artifacts:
   files:
     - build/libs/*.jar
